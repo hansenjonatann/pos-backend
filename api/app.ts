@@ -1,14 +1,14 @@
 // src/app.ts
 
 import fastify from 'fastify';
-import userRoutes from './routes/userRoutes';
-import categoryRoutes from './routes/categoryRoutes';
+import userRoutes from '../src/routes/userRoutes';
+import categoryRoutes from '../src/routes/categoryRoutes';
 
 
-import productRoutes from './routes/productRoutes';
-import { unitRoutes } from './routes/unitRoutes';
-import saleRoutes from './routes/saleRoutes';
-import { transactionRoutes } from './routes/transactionRoute';
+import productRoutes from '../src/routes/productRoutes';
+import { unitRoutes } from '../src/routes/unitRoutes';
+import saleRoutes from '../src/routes/saleRoutes';
+import { transactionRoutes } from '../src/routes/transactionRoute';
 // import saleRoutes from './routes/saleRoutes';
 
 export const app = fastify({ logger: true });
