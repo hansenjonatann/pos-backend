@@ -10,7 +10,7 @@ import saleRoutes from './routes/saleRoutes';
 import { transactionRoutes } from './routes/transactionRoute';
 // import saleRoutes from './routes/saleRoutes';
 
-export const app = fastify({ logger: true });
+ const app = fastify({ logger: true });
 
 app.register(userRoutes, { prefix: '/users' });
 app.register(categoryRoutes, { prefix: '/categories' });
@@ -28,3 +28,6 @@ app.listen({ port: 3000, host: '0.0.0.0' }, (err, address) => {
     app.log.info(`Server listening at ${address}`);
   });
   
+
+
+  export default app
