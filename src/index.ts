@@ -1,4 +1,3 @@
-// src/app.ts
 
 import fastify from 'fastify';
 import userRoutes from './routes/userRoutes';
