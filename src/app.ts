@@ -18,6 +18,10 @@ app.register(productRoutes, { prefix: '/products' });
 app.register(saleRoutes, { prefix: '/sales' });
 app.register(unitRoutes , {prefix: '/units'})
 app.register(transactionRoutes , {prefix: '/transactions'})
+app.get('/', async (request, reply) => {
+  return { hello: 'world' }
+}
+);
 
 
 
